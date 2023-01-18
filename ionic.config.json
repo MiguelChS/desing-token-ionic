@@ -1,0 +1,7 @@
+{
+  "name": "desing-token",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
