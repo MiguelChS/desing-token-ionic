@@ -1,0 +1,5 @@
+@mixin button($tokens) {
+  ion-button {
+    --background: #{map-get($tokens, 'colors', 'miguel')};
+  }
+}
