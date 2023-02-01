@@ -1,5 +1,9 @@
-@mixin button($tokens) {
+ion-button {
+  --background: #{map-get($tokens, 'Light', 'Background','background')};
+}
+
+@media (prefers-color-scheme: dark) {
   ion-button {
-    --background: #{map-get($tokens, 'colors', 'miguel')};
+    --background: #{map-get($tokens, 'Dark', 'Background','background')};
   }
 }

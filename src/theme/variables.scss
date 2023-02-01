@@ -1,11 +1,2 @@
-// Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/theming/
-@import './token-light.scss';
-@import './token-dark.scss';
+@import './token.scss';
 @import './ion-button.scss';
-
-@include button($tokens_light);
-
-@media (prefers-color-scheme: dark) {
-  @include button($tokens_dark);
-}

@@ -1,0 +1,590 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-9ae11e40c637cdc2bebdb46efab53cb690fde36f72e6476d10bed02ef85edf7d0d2af21db74a3fc18033fe42c4a83e67e7ed8634f2473873feb28cb420cacc3e",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: 'app.component.html',\n})\nexport class AppComponent {\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            },
+            "templateData": "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n"
+        },
+        {
+            "name": "HomePage",
+            "id": "component-HomePage-7c5bc1e5513862201c0feacc5c3185ee41b66dd38711e42be4e8af1fceb4417683d9d19fa09c929b5ef40f0a9b57efefa68bf9de6f2c85f89ce7c067c1065c9e",
+            "file": "src/app/home/home.page.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "home.page.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-home',\n  templateUrl: 'home.page.html'\n})\nexport class HomePage {\n\n  constructor() {}\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            },
+            "templateData": "<ion-content [fullscreen]=\"true\">\n  <ion-button size=\"small\">Small</ion-button>\n  <in2-text></in2-text>\n</ion-content>\n"
+        },
+        {
+            "name": "In2TextComponent",
+            "id": "component-In2TextComponent-273c42c41d63b3982b9d68a007732a47d12254dabea355e82df2e68057b1748c702d95dbcd766b212375ed06d0d1657a804d62f7e63da3dae63ba89b4d7b051d",
+            "file": "src/components/in2-text/in2-text.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "in2-text",
+            "styleUrls": [
+                "./in2-text.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./in2-text.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from \"@angular/core\";\n\n@Component({\n  selector: 'in2-text',\n  templateUrl: './in2-text.component.html',\n  styleUrls: [\n    './in2-text.component.scss'\n  ]\n})\nexport class In2TextComponent { }",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import '../../theme/token.scss';\n\n\n.in2Class {\n  color: map-get($tokens, 'Light', 'Text', 'text-info');\n}\n\n@media (prefers-color-scheme: dark) {\n  .in2Class {\n    color: map-get($tokens, 'Dark', 'Text', 'text-info');\n  }\n}\n",
+                    "styleUrl": "./in2-text.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<h1 class=\"in2Class\">Test Titutlo</h1>"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-213e3fccd2e6f4ec352e2a563c8e53e977fbb33e496f7ef2896fa2e56c34fc4fc65f5c729df0a5c038836de16c96664b0d0379eded494c7a4e4dfb333d37db68",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { RouteReuseStrategy } from '@angular/router';\n\nimport { IonicModule, IonicRouteStrategy } from '@ionic/angular';\n\nimport { AppComponent } from './app.component';\nimport { AppRoutingModule } from './app-routing.module';\n\n@NgModule({\n  declarations: [AppComponent],\n  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],\n  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-865660e4114eddb22432957943c2ef31a3538818e8be953aae5760a4e62f711f7b3377636becaee63ea074dd9e0db3e9a5e5869068ba9e0e03a713c0a2143cea",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { PreloadAllModules, RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [\n  {\n    path: 'home',\n    loadChildren: () => \"import('./home/home.module').then( m => m.HomePageModule)\"\n  },\n  {\n    path: '',\n    redirectTo: 'home',\n    pathMatch: 'full'\n  },\n];\n\n@NgModule({\n  imports: [\n    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })\n  ],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "ComponentsModule",
+            "id": "module-ComponentsModule-6006b9e9121a750ad2c8dfbc76353ac523e92c1c485b00571f6b72681106e3f31923de7360716ae363213f9d028a9303a23ca0b517691abdaa06528012c66f90",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/components/components.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { In2TextComponent } from './in2-text/in2-text.component';\nimport { IonicModule } from '@ionic/angular';\n\n\n@NgModule({\n  declarations: [\n    In2TextComponent\n  ],\n  imports: [\n    IonicModule\n  ],\n  exports: [\n    In2TextComponent\n  ]\n})\nexport class ComponentsModule { }",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "In2TextComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "In2TextComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "HomePageModule",
+            "id": "module-HomePageModule-0db9fc954bd8850420ebe8518e5ae9e9ed799bdbbef657a809bd70e81b46ec65fb553f52869f50007ba80d6e15c5b3e9d551cf7ebf86e2510215440b3ecc07db",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/home/home.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { IonicModule } from '@ionic/angular';\nimport { HomePage } from './home.page';\nimport { ComponentsModule } from '../../components/components.module';\n\nimport { HomePageRoutingModule } from './home-routing.module';\n\n@NgModule({\n  imports: [\n    CommonModule,\n    IonicModule,\n    HomePageRoutingModule,\n    ComponentsModule\n  ],\n  declarations: [HomePage]\n})\nexport class HomePageModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "HomePage"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "HomePageRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "HomePageRoutingModule",
+            "id": "module-HomePageRoutingModule-efd139030b972e408596fe7d68cc98e9808f8ca9310cce7c44384ed083758344343d788782a1510237f426b5bfb6574bccd426cc77b4c66ada1ecd8e748dba0d",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/home/home-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { HomePage } from './home.page';\n\nconst routes: Routes = [\n  {\n    path: '',\n    component: HomePage,\n  }\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class HomePageRoutingModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "config",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "capacitor.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "CapacitorConfig",
+                "defaultValue": "{\n  appId: 'io.ionic.starter',\n  appName: 'desing-token',\n  webDir: 'www',\n  bundledWebRuntime: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/in2-text/in2-text.component.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<In2TextComponent>",
+                "defaultValue": "(args: In2TextComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Titulo",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/components/in2-text/in2-text.component.stories.tsx",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "capacitor.config.ts": [
+                {
+                    "name": "config",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "capacitor.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "CapacitorConfig",
+                    "defaultValue": "{\n  appId: 'io.ionic.starter',\n  appName: 'desing-token',\n  webDir: 'www',\n  bundledWebRuntime: false\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/components/in2-text/in2-text.component.stories.tsx": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/in2-text/in2-text.component.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<In2TextComponent>",
+                    "defaultValue": "(args: In2TextComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "Titulo",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/components/in2-text/in2-text.component.stories.tsx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "home",
+                        "loadChildren": "./home/home.module#HomePageModule",
+                        "children": [
+                            {
+                                "kind": "module",
+                                "children": [
+                                    {
+                                        "name": "routes",
+                                        "filename": "src/app/home/home-routing.module.ts",
+                                        "module": "HomePageRoutingModule",
+                                        "children": [
+                                            {
+                                                "path": "",
+                                                "component": "HomePage"
+                                            }
+                                        ],
+                                        "kind": "module"
+                                    }
+                                ],
+                                "module": "HomePageModule"
+                            }
+                        ]
+                    },
+                    {
+                        "path": "",
+                        "redirectTo": "home",
+                        "pathMatch": "full"
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "capacitor.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "config",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/home/home.page.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HomePage",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/in2-text/in2-text.component.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/in2-text/in2-text.component.stories.tsx",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Titulo",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/components/in2-text/in2-text.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "In2TextComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

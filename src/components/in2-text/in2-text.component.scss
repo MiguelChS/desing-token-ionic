@@ -1,0 +1,12 @@
+@import '../../theme/token.scss';
+
+
+.in2Class {
+  color: map-get($tokens, 'Light', 'Text', 'text-info');
+}
+
+@media (prefers-color-scheme: dark) {
+  .in2Class {
+    color: map-get($tokens, 'Dark', 'Text', 'text-info');
+  }
+}
